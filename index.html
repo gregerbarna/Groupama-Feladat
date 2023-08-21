@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Groupama tesztfeladat </title>
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+         
+        <div>
+          <a class="navbar-brand" href="#">
+            <img src="logo_colors@2x-8.png" alt="Logo" width="130" height="38px">
+          </a>
+        </div>
+
+        <div>
+          <div class="d-block d-md-none" > <!-- reszponziv header elemek-->
+          <img src="Group 31.png" alt="" width="15" height="5px" style="cursor: pointer;">
+          <img src="Group 40.png" alt="" width="25" height="18px" style="cursor: pointer;margin-left: 18px;">
+        </div>
+
+          <img src="exit.png" alt="" width="93" height="22px" style="cursor: pointer;" class="d-none d-md-block">
+        </div>
+        </div>
+      </header>
+
+<div class="container">
+    <!-- body container -->
+    <div class="row">
+      
+      <div class="col-md-3 d-none d-md-block" id="bal">
+        <div  class="box" style="border-bottom: 2px solid rgba(213, 213, 213, 0.387);">
+          <h3 >Folyamatos Díjfizetésű Ultra <br> Prémium Életbiztosítás</h3>
+          
+        </div>
+        <div class="box">Szerzdő neve <br>Kovács István</div>
+        <div class="box">Szerződésszám <br>4234832</div>
+        <div class="box">Utolsó befizetés <br>2019.04.24</div>
+        <div class="box">Biztosítási díj rendezve <br>2020.01.01</div>
+      </div>
+      <!-- jobb oldali doboz -->
+      <div class="col-md-9" id="jobbdoboz">
+        <div class="box" id="jobb-head">
+          <div class="jobbhead d-block d-sm-none">Fizetendő díjak</div>
+          <div class="jobbhead d-none d-sm-block">Fizetendő feltételek</div>
+          <div class="jobbhead">Eseti díj befizetése</div>
+          <div class="jobbhead">Fizetési előzmények</div>
+        </div>
+
+  
+        <div class="table-responsive">
+          
+          <table class="table table-borderless" id="tablazat">
+            <thead>
+              <tr style="box-shadow: none !important;" class="theader">
+                <th class="elso">Azonosító</th>
+                <th class="elso">Befizetés módja</th>
+                <th class="elso">Dátum</th>   
+                <th class="elso">Összeg</th>
+                <th class="elso">Státusz</th>
+                <th class="elso"></th>
+              </tr>
+            </thead>
+
+
+            <tbody >
+              <tr>
+                <td class="azonosito-cell">
+                   <object class="nyil" type="image/svg+xml" data="balnyilSVG.svg"></object>
+                    <span class="azonosito">4234324324</span>
+                </td>
+                <td class="fizetes">Bankkártya</td>
+                <td>2019.08.16</td>
+                <td class="osszeg">15 000 Ft</td>
+                <td class="folyamatban" ><span class="dot" style=" color:#A1CAFF;margin-right: 5px;">•</span>Folyamatban </td>
+                <td class="vector"><object type="image/svg+xml" data="Vector.svg"></object></td>
+                <td class="expand-responsive"><img src="arrow.png" class="expand-button" data-toggle="collapse" data-target="#collapseExample1"></td>
+            </tr>
+            <tr class="collapse" id="collapseExample1">
+                <td colspan="7">
+                    <div class="card card-body" style="display:flex;flex-direction: row;border: none;  border-bottom:1px solid rgba(214, 214, 214, 0.549); border-radius: 0px;">
+                        <p class="collapsed-details">Biztosítási időszak <br> 2019.05.01 - 06.01</p>
+                        <p class="collapsed-details">Díjelőírás <br>15 000 Ft</p>
+                        <p class="collapsed-details">Könyvelt Díj <br><span class="osszeg">15 000 Ft</span></p>
+                    </div>
+                    <div class="csatolmany">
+                        <p>Csatolmány</p>
+                        <p><img src="Group 85.png" alt=""><span class="fizetesi-nyugta">Fizetési nyugta letöltése</span></p>
+                    </div>
+                </td>
+            </tr>
+
+
+                <tr>
+                  
+                  <td class="azonosito-cell">
+                    <object class="nyil" type="image/svg+xml" data="balnyilSVG.svg"></object>
+                      <span class="azonosito">4234324324</span>
+                  </td>
+                  <td>Bankkártya</td>
+                  <td>2019.08.16</td>
+                  <td class="osszeg">5 000 Ft</td>
+                  <td class="folyamatban"><span class="dot" style="color:#01BBA1;margin-right: 5px;">•</span>Beérkezett</td>
+                  <td class="d-none d-sm-block"></td>
+                  <td class="expand-responsive"><img src="arrow.png" class="expand-button" data-toggle="collapse" data-target="#collapseExample2"></td>
+              </tr>
+              <tr class="collapse" id="collapseExample1">
+                  <td colspan="7">
+                      <div class="card card-body" style="display:flex;flex-direction: row;border: none;  border-bottom:1px solid rgba(214, 214, 214, 0.549); border-radius: 0px;">
+                          <p class="collapsed-details">Biztosítási időszak <br> 2019.06.02 - 07.01</p>
+                          <p class="collapsed-details">Díjelőírás <br>5 000 Ft</p>
+                          <p class="collapsed-details">Könyvelt Díj <br><span class="osszeg">5 000 Ft</span></p>
+                      </div>
+                      
+                      </div>
+                  </td>
+              </tr>
+                    
+
+
+                <tr>
+                  <td class="azonosito-cell">
+                    <object class="nyil" type="image/svg+xml" data="balnyilSVG.svg"></object>
+                      <span class="azonosito">4234324fsdfsdfsdfs324</span>
+                  </td>
+                  <td>Bankkártya</td>
+                  <td>2019.08.16</td>
+                  <td class="osszeg">5 000 Ft</td>
+                  <td class="folyamatban"><span class="dot" style="color: #DC414F;margin-right: 5px;">•</span>Sikertelen</td>
+                  <td class="vector"><object type="image/svg+xml" data="Vector.svg"></object></td>
+                  <td class="expand-responsive"><img src="arrow.png" class="expand-button" data-toggle="collapse" data-target="#collapseExample3"></td>
+              </tr>
+              <tr class="collapse" id="collapseExample1">
+                  <td colspan="7">
+                      <div class="card card-body" style="display:flex;flex-direction: row;border: none;  border-bottom:1px solid rgba(214, 214, 214, 0.549); border-radius: 0px;">
+                          <p class="collapsed-details">Biztosítási időszak <br> 2019.06.02 - 07.01</p>
+                          <p class="collapsed-details">Díjelőírás <br>5 000 Ft</p>
+                          <p class="collapsed-details">Könyvelt Díj <br><span class="osszeg">5 000 Ft</span></p>
+                      </div>
+                      <div class="csatolmany">
+                          <p>Csatolmány</p>
+                          <p><img src="Group 85.png" alt=""><span class="fizetesi-nyugta">Fizetési nyugta letöltése</span></p>
+                      </div>
+                  </td>
+              </tr>
+
+
+
+              <tr>
+                <td class="azonosito-cell">
+                    <object class="nyil" type="image/svg+xml" data="balnyilSVG.svg"></object>
+                    <span class="azonosito">4234324324</span>
+                </td>
+                <td>Beérkezett</td>
+                <td>2019.08.16</td>
+                <td class="osszeg">5 000 Ft</td>
+                <td class="folyamatban"><span class="dot" style="color:#01BBA1;margin-right: 5px;">•</span>Beérkezett</td>
+                <td><object type="image/svg+xml" data="Vector.svg"></object></td>
+                <td class="expand-responsive"><img src="arrow.png" class="expand-button" data-toggle="collapse" data-target="#collapseExample4"></td>
+            </tr>
+            <tr class="collapse" id="collapseExample1">
+                <td colspan="7">
+                    <div class="card card-body" style="display:flex;flex-direction: row;border: none;  border-bottom:1px solid rgba(214, 214, 214, 0.549); border-radius: 0px;">
+                        <p class="collapsed-details">Biztosítási időszak <br> 2019.06.02 - 07.01</p>
+                        <p class="collapsed-details">Díjelőírás <br>5 000 Ft</p>
+                        <p class="collapsed-details">Könyvelt Díj <br><span class="osszeg">5 000 Ft</span></p>
+                    </div>
+                    <div class="csatolmany">
+                        <p>Csatolmány</p>
+                        <p><img src="Group 85.png" alt=""> <span class="fizetesi-nyugta">Fizetési nyugta letöltése</span></p>
+                    </div>
+                </td>
+            </tr>
+           </tbody>
+          </table>
+        </div>
+      </div>   
+    </div>
+  </div> 
+
+ <!-- reszponziv tablazat-->
+ <div class="container d-block d-sm-none" >
+
+  <div class="row responsive-box">
+    <div class="col-1">
+     <div class="dot-div" style="color: #A1CAFF;">•</div> 
+    </div>
+  
+    <div class="col-7">
+      <div class="responsive-adatok">Folyamatban</div>
+      <div class="responsive-adatok adat-nagy">12 500 Ft</div>
+      <div class="responsive-adatok adat-kicsi">Fizetési dátum:2019.06.28 <object style="margin-left: 10px;" type="image/svg+xml" data="Vector.svg"></object></div>
+    </div>
+  
+    <div class="col responsive-dot arrow">
+      <div class="responsive-arrow d-none"><img width="18px" src="arrow.png" class="expand-button" data-toggle="collapse" data-target="#collapseExample1"></div>
+    </div>
+</div>
+     
+
+
+         <div class="row responsive-box">
+          <div class="col-1">
+          <div class="dot-div 2" >•</div> 
+          </div>
+
+  <div class="col-7">
+    <div class="responsive-adatok">Beérkezett</div>
+    <div class="responsive-adatok adat-nagy">5 000 Ft</div>
+    <div class="responsive-adatok adat-kicsi">Fizetési dátum:2019.06.26 <object style="margin-left: 10px;" type="image/svg+xml" data="Vector.svg"></object></div>
+    
+  </div>
+
+  
+  
+
+  <div class="col responsive-dot arrow">
+    <div class="responsive-arrow" id="arrowIcon1">
+      <img width="18px" src="arrow.png" class="showBoxButton">
+    </div>
+  </div>
+
+<!-- Hided rész-->
+</div>
+<div class="row responsive-hided" style="display: none;" >
+  <div style="display: block;">
+  <div class="col hided-adatok" >Státusz <br>Folyamatban</div>
+  <div class="col hided-adatok">Azonosító <br>12345678 </div>
+  <div class="col hided-adatok">Hogyan <br>Bankkártya</div>
+</div>
+  <div class="hided-csatolmany"> 
+        Csatolmány
+        <div class="hided-csatolmany-box">
+        <div style="margin-top: 8px;"> <img src="Group 85.png" alt=""> <span style="margin-left: 10px;">Fizetési nyugta letöltése</span></div>
+        <div class="download-icon"> <img src="Group 88.png" alt=""></div>
+
+        </div>
+  </div>
+
+
+
+  <div class="col">
+
+     <div class="hided-idoszak"> Időszak <br> 2019. 11. 20- 2020. 11. 19 </div>
+
+     <div class="col hided-dijak" style="border-bottom:  1px solid rgba(198, 198, 198, 0.345);">
+     <div> Díjelőírás <br> 5 000 Ft</div>
+     <div> Könyvelt Díj <br> <span style="font-weight: 700;">5 000 Ft </span> </div>
+    </div>
+     
+  </div>
+
+  <div class="col">
+
+    <div class="hided-idoszak"> Időszak <br> 2019. 11. 20- 2020. 11. 19 </div>
+
+    <div class="col hided-dijak">
+    <div> Díjelőírás <br> 5000 Ft</div>
+    <div> Könyvelt Díj <br> <span style="font-weight: 700;">5 000 Ft </span> </div>
+   </div>
+    
+ </div>
+
+
+</div>
+
+
+
+         
+<div class="row responsive-box">
+  <div class="col-1">
+  <div class="dot-div 2" >•</div> 
+  </div>
+
+<div class="col-7">
+<div class="responsive-adatok">Beérkezett</div>
+<div class="responsive-adatok adat-nagy">12 500 Ft</div>
+<div class="responsive-adatok adat-kicsi">Fizetési dátum:2019.06.26 <object style="margin-left: 10px;" type="image/svg+xml" data="Vector.svg"></object></div>
+
+</div>
+
+
+
+
+<div class="col responsive-dot arrow">
+  <div class="responsive-arrow" id="arrowIcon2">
+    <img width="18px" src="arrow.png" class="showBoxButton">
+  </div>
+</div>
+
+<!-- Hided rész-->
+</div>
+<div class="row responsive-hided" style="display: none;" >
+<div style="display: block;">
+<div class="col hided-adatok" >Státusz <br>Folyamatban</div>
+<div class="col hided-adatok">Azonosító <br>12345678 </div>
+<div class="col hided-adatok">Hogyan <br>Bankkártya</div>
+</div>
+<div class="hided-csatolmany"> 
+Csatolmány
+<div class="hided-csatolmany-box">
+<div style="margin-top: 8px;"> <img src="Group 85.png" alt=""> <span style="margin-left: 10px;">Fizetési nyugta letöltése</span></div>
+<div  class="download-icon"> <img src="Group 88.png" alt=""></div>
+
+</div>
+</div>
+
+
+
+<div class="col">
+
+<div class="hided-idoszak"> Időszak <br> 2019. 11. 20- 2020. 11. 19 </div>
+
+<div class="col hided-dijak" style="border-bottom:  1px solid rgba(198, 198, 198, 0.345);">
+<div> Díjelőírás <br> 12 500  Ft</div>
+<div> Könyvelt Díj <br> <span style="font-weight: 700;">12 500 Ft </span> </div>
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="hided-idoszak"> Időszak <br> 2019. 11. 20- 2020. 11. 19 </div>
+
+<div class="col hided-dijak">
+<div> Díjelőírás <br> 12 500  Ft</div>
+<div> Könyvelt Díj <br> <span style="font-weight: 700;">12 500  Ft </span> </div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="row responsive-box">
+  <div class="col-1">
+  <div class="dot-div 2" >•</div> 
+  </div>
+
+<div class="col-7">
+<div class="responsive-adatok">Beérkezett</div>
+<div class="responsive-adatok adat-nagy">5 000 Ft</div>
+<div class="responsive-adatok adat-kicsi">Fizetési dátum:2019.06.26 <object style="margin-left: 10px;" type="image/svg+xml" data="Vector.svg"></object></div>
+
+</div>
+
+
+
+
+<div class="col responsive-dot arrow">
+  <div class="responsive-arrow" id="arrowIcon3">
+    <img width="18px" src="arrow.png" class="showBoxButton">
+  </div>
+</div>
+
+<!-- Hided rész-->
+</div>
+<div class="row responsive-hided" style="display: none;" >
+<div style="display: block;">
+<div class="col hided-adatok" >Státusz <br>Folyamatban</div>
+<div class="col hided-adatok">Azonosító <br>12345678 </div>
+<div class="col hided-adatok">Hogyan <br>Bankkártya</div>
+</div>
+<div class="hided-csatolmany"> 
+Csatolmány
+<div class="hided-csatolmany-box">
+<div style="margin-top: 8px;"> <img src="Group 85.png" alt=""> <span style="margin-left: 10px;">Fizetési nyugta letöltése</span></div>
+<div  class="download-icon"> <img src="Group 88.png" alt=""></div>
+
+</div>
+</div>
+
+
+
+<div class="col">
+
+<div class="hided-idoszak"> Időszak <br> 2019. 11. 20- 2020. 11. 19 </div>
+
+<div class="col hided-dijak" style="border-bottom:  1px solid rgba(198, 198, 198, 0.345);">
+<div> Díjelőírás <br> 5 000 Ft</div>
+<div> Könyvelt Díj <br> <span style="font-weight: 600;">5 000 Ft </span> </div>
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="hided-idoszak"> Időszak <br> 2019. 11. 20- 2020. 11. 19 </div>
+
+<div class="col hided-dijak">
+<div> Díjelőírás <br> 5000 Ft</div>
+<div> Könyvelt Díj <br> <span style="font-weight: 700;">5 000 Ft </span> </div>
+</div>
+</div>
+
+     </div>
+   </div>
+ </div>
+</div>
+<!-- reszponziv tablazat vege-->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+
+   document.addEventListener("DOMContentLoaded", function() {
+  const expandButtons = document.querySelectorAll('.expand-button');
+  
+  expandButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const details = this.closest('tr').nextElementSibling;
+      details.classList.toggle('collapse');
+      this.classList.toggle('rotated');
+    });
+  });
+});
+
+    
+// Reszponzív rejtett adatok megjelenítése
+document.addEventListener("DOMContentLoaded", function () {
+  const showBoxButtons = document.querySelectorAll(".showBoxButton");
+
+  showBoxButtons.forEach(function (showBoxButton, index) {
+    showBoxButton.addEventListener("click", function () {
+      const hiddenBox = document.querySelectorAll(".responsive-hided")[index];
+      const arrowIcon = this.parentElement;
+
+      if (hiddenBox) {
+        if (hiddenBox.style.display === "none" || hiddenBox.style.display === "") {
+          hiddenBox.style.display = "block";
+          arrowIcon.style.transform = "rotate(180deg)"; 
+        } else {
+          hiddenBox.style.display = "none";
+          arrowIcon.style.transform = "rotate(0deg)"; 
+        }
+      }
+    });
+  });
+});
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const azonositoElemek = document.querySelectorAll('.azonosito');
+    
+    azonositoElemek.forEach(azonositoElem => {
+        const eredetiAzonosito = azonositoElem.textContent;
+        azonositoElem.textContent = eredetiAzonosito.substring(0, 7) + "...";
+       
+        let teljesAzonositoVisible = false;
+        const nyilElem = azonositoElem.previousElementSibling; 
+
+        azonositoElem.addEventListener('click', function () {
+            if (!teljesAzonositoVisible) {
+                azonositoElem.textContent = eredetiAzonosito;
+                nyilElem.classList.add('rotated'); 
+                teljesAzonositoVisible = true;
+            } else {
+                azonositoElem.textContent = eredetiAzonosito.substring(0, 7) + "...";
+                nyilElem.classList.remove('rotated'); 
+                teljesAzonositoVisible = false;
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

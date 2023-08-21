@@ -1,0 +1,269 @@
+header {
+  box-shadow: 10px 1px 5px 1px #CECECE;
+  width: 100%;
+  z-index: 2;
+  height: 70px;
+  background-color: white;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+.box {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+#bal {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  box-shadow: 0px 2px 5px 0px #CECECE;
+  z-index: 1;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+h3 {
+  font-size: 14px;
+  color: #283168;
+  font-weight: 600 !important;
+  margin-top: 10px;
+}
+#jobbdoboz {
+  padding-left: 25px;
+  font-weight: 400;
+}
+#jobb-head {
+  display: flex;
+  color: #283168;
+}
+.jobbhead {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 25px;
+  text-align: center;
+}
+.jobbhead:nth-child(4) {
+  font-weight: 600;
+  border-bottom: 3px solid #01BBA1;
+  padding-bottom: 25px;
+  z-index: 100;
+}
+.dot {
+  margin-right: 10px;
+}
+.dot:nth-child(1) {
+  color: #A1CAFF;
+}
+.dot:nth-child(3) {
+  color: #01BBA1;
+}
+.osszeg {
+  font-weight: 600;
+}
+#tablazat {
+  border-collapse: separate;
+  border-spacing: 0 25px;
+  font-weight: 500;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+.elso {
+  color: #6F7381 !important;
+  font-weight: 500;
+}
+tr {
+  border: none;
+  box-shadow: 0px 4px 7px 3px #CECECE;
+  border-radius: 4px;
+}
+tr td {
+  background-color: white;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  color: #3D424C !important;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.collapsed-details {
+  margin-right: 55px;
+  line-height: 30px;
+}
+.card .collapsed-details:first-child {
+  margin-right: 155px;
+}
+.csatolmany {
+  margin-top: 30px !important;
+  margin-left: 30px;
+}
+.fizetesi-nyugta {
+  margin-left: 15px;
+}
+.azonosito {
+  cursor: pointer;
+}
+.azonosito-part {
+  display: inline-block;
+}
+.azonosito-short {
+  display: inline-block;
+}
+.azonosito-long {
+  display: none;
+}
+.expand-button {
+  cursor: pointer;
+}
+.azonosito-part.expanded .azonosito-short {
+  display: none;
+}
+.azonosito-part.expanded .azonosito-long {
+  display: inline-block;
+}
+.nyil-container {
+  display: inline-block;
+  margin-left: 10px;
+}
+.nyil {
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.3s;
+}
+.rotated {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+@media (max-width: 960px) {
+  #tablazat {
+    display: none !important;
+  }
+  .theader {
+    display: none;
+  }
+  .azonosito-cell {
+    display: none;
+  }
+  .fizetes {
+    display: none;
+  }
+  .expand-responsive {
+    display: none;
+  }
+  .vector {
+    display: none;
+  }
+  .dot {
+    display: none;
+  }
+  .jobbhead:nth-child(4) {
+    font-weight: 600;
+    border-bottom: 3px solid #01BBA1;
+    padding-bottom: 5px;
+  }
+  /* Mobil nézet táblázat css -------------------- */
+  .responsive-arrow {
+    transition: 1s;
+  }
+  .responsive-box div {
+    max-height: 50px;
+  }
+  .responsive-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 4px 7px 3px #CECECE;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    padding-top: 20px !important;
+    padding-bottom: 35px !important;
+    color: #3D424C !important;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .responsive-adatok {
+    display: flex;
+    font-size: 12px;
+  }
+  .responsive-adatok.adat-nagy {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .responsive-adatok.adat-kicsi {
+    font-size: 12px;
+  }
+  .responsive-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .responsive-arrow {
+    margin-top: 15px;
+  }
+  .col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dot-div {
+    color: #01BBA1;
+    font-size: 50px;
+    margin-bottom: 7px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .responsive-hided {
+    box-shadow: 0px 4px 7px 3px #CECECE;
+    border-radius: 4px;
+    background-color: white;
+    margin: 0;
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+  }
+  .hided-adatok {
+    margin: 12px;
+    font-family: sans-serif;
+    float: left;
+  }
+  .hided-adatok:nth-child(3) {
+    border-bottom: 1px solid rgba(198, 198, 198, 0.345);
+    padding-bottom: 10px;
+  }
+  .hided-idoszak {
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+  .hided-dijak {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px ;
+  }
+  .hided-csatolmany {
+    border-bottom: 1px solid #C6C6C6;
+    margin: 17px;
+  }
+  .hided-csatolmany-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .download-icon {
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 8px;
+    margin-left: 85px;
+  }
+}
